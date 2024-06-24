@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3WXYV7++B6HJYLLbDNXyU3eZHekJu/z1My1ThnNcXx9PFozosOUEnB4UQSUZdq7ycpr7HvgjQ3JdpZoYd/sNtw==",
+  "dgSpecHash": "7tx6VcI7EbAzf+CHi3JKe5ET7WMcpXDMu55lyPwhEAMiXQk00RqEgkCJCZqDOacsd07byRu5ZTtvrSpHMH4Juw==",
   "success": true,
-  "projectFilePath": "/Users/grimaldo.soto/RiderProjects/Home/Domain/Domain.csproj",
+  "projectFilePath": "/Users/grimaldo.soto/RiderProjects/Home/src/Domain/Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

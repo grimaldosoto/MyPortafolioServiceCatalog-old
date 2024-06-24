@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DawCeAWe/sY6RWDaJV4oxGUPx2wIPeuZiS4lGc+JpO8ADeX9iWDO/9kzXi84Ire/dzcVBdqna4wKCcP0ANTc4g==",
+  "dgSpecHash": "aT6Fxx2jACrZAXypaEvOQNO7hjW4YauMXYYHXfR/fcbnYyts2SnFKur5M8TQ9M8GJIa1QLdgT8u6D1vAG4ivMw==",
   "success": true,
-  "projectFilePath": "/Users/grimaldo.soto/RiderProjects/Home/Catalog.Api/Catalog.Api.csproj",
+  "projectFilePath": "/Users/grimaldo.soto/RiderProjects/Home/src/Catalog.Api/Catalog.Api.csproj",
   "expectedPackageFiles": [
     "/Users/grimaldo.soto/.nuget/packages/microsoft.aspnetcore.openapi/8.0.4/microsoft.aspnetcore.openapi.8.0.4.nupkg.sha512",
     "/Users/grimaldo.soto/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/grimaldo.soto/RiderProjects/Home/Infrastructure/Infrastructure.csproj": {}
+    "/Users/grimaldo.soto/RiderProjects/Home/src/Infrastructure/Infrastructure.csproj": {}
   },
   "projects": {
-    "/Users/grimaldo.soto/RiderProjects/Home/Infrastructure/Infrastructure.csproj": {
+    "/Users/grimaldo.soto/RiderProjects/Home/src/Infrastructure/Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/grimaldo.soto/RiderProjects/Home/Infrastructure/Infrastructure.csproj",
+        "projectUniqueName": "/Users/grimaldo.soto/RiderProjects/Home/src/Infrastructure/Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "/Users/grimaldo.soto/RiderProjects/Home/Infrastructure/Infrastructure.csproj",
+        "projectPath": "/Users/grimaldo.soto/RiderProjects/Home/src/Infrastructure/Infrastructure.csproj",
         "packagesPath": "/Users/grimaldo.soto/.nuget/packages/",
-        "outputPath": "/Users/grimaldo.soto/RiderProjects/Home/Infrastructure/obj/",
+        "outputPath": "/Users/grimaldo.soto/RiderProjects/Home/src/Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/grimaldo.soto/.nuget/NuGet/NuGet.Config"

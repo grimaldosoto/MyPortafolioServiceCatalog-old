@@ -465,11 +465,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/grimaldo.soto/RiderProjects/Home/Catalog.Api/Catalog.Api.csproj",
+      "projectUniqueName": "/Users/grimaldo.soto/RiderProjects/Home/src/Catalog.Api/Catalog.Api.csproj",
       "projectName": "Catalog.Api",
-      "projectPath": "/Users/grimaldo.soto/RiderProjects/Home/Catalog.Api/Catalog.Api.csproj",
+      "projectPath": "/Users/grimaldo.soto/RiderProjects/Home/src/Catalog.Api/Catalog.Api.csproj",
       "packagesPath": "/Users/grimaldo.soto/.nuget/packages/",
-      "outputPath": "/Users/grimaldo.soto/RiderProjects/Home/Catalog.Api/obj/",
+      "outputPath": "/Users/grimaldo.soto/RiderProjects/Home/src/Catalog.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/grimaldo.soto/.nuget/NuGet/NuGet.Config"

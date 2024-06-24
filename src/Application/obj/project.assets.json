@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/grimaldo.soto/RiderProjects/Home/Application/Application.csproj",
+      "projectUniqueName": "/Users/grimaldo.soto/RiderProjects/Home/src/Application/Application.csproj",
       "projectName": "Application",
-      "projectPath": "/Users/grimaldo.soto/RiderProjects/Home/Application/Application.csproj",
+      "projectPath": "/Users/grimaldo.soto/RiderProjects/Home/src/Application/Application.csproj",
       "packagesPath": "/Users/grimaldo.soto/.nuget/packages/",
-      "outputPath": "/Users/grimaldo.soto/RiderProjects/Home/Application/obj/",
+      "outputPath": "/Users/grimaldo.soto/RiderProjects/Home/src/Application/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/grimaldo.soto/.nuget/NuGet/NuGet.Config"
