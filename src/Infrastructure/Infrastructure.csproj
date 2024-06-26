@@ -8,6 +8,20 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Domain\Domain.csproj" />
+      <ProjectReference Include="..\Utilities\Utilities.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Dtos\" />
+      <Folder Include="Extensions\" />
+      <Folder Include="Helpers\" />
+      <Folder Include="Persistences\Contexts\" />
+      <Folder Include="Persistences\Interfaces\" />
+      <Folder Include="Persistences\Repositories\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="System.Linq.Dynamic.Core" Version="1.4.2" />
     </ItemGroup>
 
 </Project>
