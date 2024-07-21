@@ -1,30 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "/Users/grimaldo.soto/RiderProjects/Home/src/Infrastructure/Infrastructure.csproj": {}
+    "C:\\Users\\grima\\Source\\Repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "/Users/grimaldo.soto/RiderProjects/Home/src/Domain/Domain.csproj": {
+    "C:\\Users\\grima\\Source\\Repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/grimaldo.soto/RiderProjects/Home/src/Domain/Domain.csproj",
+        "projectUniqueName": "C:\\Users\\grima\\Source\\Repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/Users/grimaldo.soto/RiderProjects/Home/src/Domain/Domain.csproj",
-        "packagesPath": "/Users/grimaldo.soto/.nuget/packages/",
-        "outputPath": "/Users/grimaldo.soto/RiderProjects/Home/src/Domain/obj/",
+        "projectPath": "C:\\Users\\grima\\Source\\Repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\grima\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\grima\\Source\\Repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/grimaldo.soto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\grima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -40,20 +43,8 @@
         }
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[8.0.6, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.6, )"
-            }
-          },
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
@@ -70,37 +61,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/grimaldo.soto/RiderProjects/Home/src/Infrastructure/Infrastructure.csproj": {
+    "C:\\Users\\grima\\Source\\Repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/grimaldo.soto/RiderProjects/Home/src/Infrastructure/Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\grima\\Source\\Repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "/Users/grimaldo.soto/RiderProjects/Home/src/Infrastructure/Infrastructure.csproj",
-        "packagesPath": "/Users/grimaldo.soto/.nuget/packages/",
-        "outputPath": "/Users/grimaldo.soto/RiderProjects/Home/src/Infrastructure/obj/",
+        "projectPath": "C:\\Users\\grima\\Source\\Repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\grima\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\grima\\Source\\Repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/grimaldo.soto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\grima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/grimaldo.soto/RiderProjects/Home/src/Domain/Domain.csproj": {
-                "projectPath": "/Users/grimaldo.soto/RiderProjects/Home/src/Domain/Domain.csproj"
+              "C:\\Users\\grima\\Source\\Repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\grima\\Source\\Repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Domain\\Domain.csproj"
               },
-              "/Users/grimaldo.soto/RiderProjects/Home/src/Utilities/Utilities.csproj": {
-                "projectPath": "/Users/grimaldo.soto/RiderProjects/Home/src/Utilities/Utilities.csproj"
+              "C:\\Users\\grima\\Source\\Repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Utilities\\Utilities.csproj": {
+                "projectPath": "C:\\Users\\grima\\Source\\Repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Utilities\\Utilities.csproj"
               }
             }
           }
@@ -117,8 +111,8 @@
         }
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "System.Linq.Dynamic.Core": {
               "target": "Package",
@@ -141,31 +135,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/grimaldo.soto/RiderProjects/Home/src/Utilities/Utilities.csproj": {
+    "C:\\Users\\grima\\Source\\Repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Utilities\\Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/grimaldo.soto/RiderProjects/Home/src/Utilities/Utilities.csproj",
+        "projectUniqueName": "C:\\Users\\grima\\Source\\Repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Utilities\\Utilities.csproj",
         "projectName": "Utilities",
-        "projectPath": "/Users/grimaldo.soto/RiderProjects/Home/src/Utilities/Utilities.csproj",
-        "packagesPath": "/Users/grimaldo.soto/.nuget/packages/",
-        "outputPath": "/Users/grimaldo.soto/RiderProjects/Home/src/Utilities/obj/",
+        "projectPath": "C:\\Users\\grima\\Source\\Repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Utilities\\Utilities.csproj",
+        "packagesPath": "C:\\Users\\grima\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\grima\\Source\\Repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Utilities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/grimaldo.soto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\grima\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -181,8 +178,8 @@
         }
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
@@ -199,7 +196,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }
