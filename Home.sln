@@ -22,6 +22,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{081566F0-361D-4F14-A8A1-FCCE5E885B4F}"
 	ProjectSection(SolutionItems) = preProject
 		commands.txt = commands.txt
+		Secrets.txt = Secrets.txt
 	EndProjectSection
 EndProject
 Global
