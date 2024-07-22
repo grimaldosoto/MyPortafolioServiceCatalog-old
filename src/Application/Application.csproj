@@ -7,30 +7,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Remove="Commons\**" />
-      <Compile Remove="Dtos\**" />
-      <Compile Remove="Extensions\**" />
-      <Compile Remove="Interfaces\**" />
-      <Compile Remove="Mappers\**" />
-      <Compile Remove="Services\**" />
-      <Compile Remove="Validators\**" />
-      <EmbeddedResource Remove="Commons\**" />
-      <EmbeddedResource Remove="Dtos\**" />
-      <EmbeddedResource Remove="Extensions\**" />
-      <EmbeddedResource Remove="Interfaces\**" />
-      <EmbeddedResource Remove="Mappers\**" />
-      <EmbeddedResource Remove="Services\**" />
-      <EmbeddedResource Remove="Validators\**" />
-      <None Remove="Commons\**" />
-      <None Remove="Dtos\**" />
-      <None Remove="Extensions\**" />
-      <None Remove="Interfaces\**" />
-      <None Remove="Mappers\**" />
-      <None Remove="Services\**" />
-      <None Remove="Validators\**" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
     </ItemGroup>
 
@@ -39,6 +15,16 @@
       <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
       <PackageReference Include="Azure.Storage.Blobs" Version="12.20.0" />
       <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Commons\" />
+      <Folder Include="Dtos\" />
+      <Folder Include="Extensions\" />
+      <Folder Include="Mappers\" />
+      <Folder Include="Interfaces\" />
+      <Folder Include="Validators\" />
+      <Folder Include="Services\" />
     </ItemGroup>
 
 </Project>

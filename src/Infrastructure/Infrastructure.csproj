@@ -7,27 +7,21 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Remove="Dtos\**" />
-      <Compile Remove="Extensions\**" />
-      <Compile Remove="Helpers\**" />
-      <Compile Remove="Persistences\**" />
-      <EmbeddedResource Remove="Dtos\**" />
-      <EmbeddedResource Remove="Extensions\**" />
-      <EmbeddedResource Remove="Helpers\**" />
-      <EmbeddedResource Remove="Persistences\**" />
-      <None Remove="Dtos\**" />
-      <None Remove="Extensions\**" />
-      <None Remove="Helpers\**" />
-      <None Remove="Persistences\**" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\Domain\Domain.csproj" />
       <ProjectReference Include="..\Utilities\Utilities.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="System.Linq.Dynamic.Core" Version="1.4.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Dtos\" />
+      <Folder Include="Extensions\" />
+      <Folder Include="Helpers\" />
+      <Folder Include="Persistences\Contexts\" />
+      <Folder Include="Persistences\Interfaces\" />
+      <Folder Include="Persistences\Repositories\" />
     </ItemGroup>
 
 </Project>

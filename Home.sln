@@ -17,7 +17,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilities", "src\Utilities\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.Test", "test\Catalog.Test\Catalog.Test.csproj", "{ABD46C72-9BF8-4751-86DB-1BB88BFFA65E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Home.API", "src\Home.API\Home.API.csproj", "{723273EE-6974-4593-91FD-12695E7E42DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Home.API", "src\Home.API\Home.API.csproj", "{723273EE-6974-4593-91FD-12695E7E42DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{081566F0-361D-4F14-A8A1-FCCE5E885B4F}"
+	ProjectSection(SolutionItems) = preProject
+		commands.txt = commands.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
