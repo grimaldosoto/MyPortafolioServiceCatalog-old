@@ -56,8 +56,6 @@ namespace Infrastructure.Persistences.Repositories
             response.Items = await Ordering(filters, technologies, !(bool)filters.Download!).ToListAsync();
 
             return response;
-           
-           
         }
 
         public async Task<bool> UpdateTechnology(Technology technology)

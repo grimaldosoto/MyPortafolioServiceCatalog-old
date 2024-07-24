@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Dtos.Request
+namespace Application.Dtos.Response
 {
-    public class TechnologyRequestDto
+    public class TechnologySelectResponseDto
     {
+        public int TechnologyId { get; set; }
         public string? Name { get; set; }
-        public string? Version { get; set; }
-        public string? Description { get; set; }
     }
 }
