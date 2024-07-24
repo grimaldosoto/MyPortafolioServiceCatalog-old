@@ -3,6 +3,7 @@ using Infrastructure.Commons.Bases.Request;
 using Infrastructure.Commons.Bases.Response;
 using Infrastructure.Persistences.Contexts;
 using Infrastructure.Persistences.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Persistences.Repositories
 {
@@ -15,34 +16,86 @@ namespace Infrastructure.Persistences.Repositories
             _context = context;
         }
 
-        public Task<bool> CreateTechnology(Technology technology)
+        public async Task<bool> CreateTechnology(Technology technology)
         {
-            throw new NotImplementedException();
+            await _context.AddAsync(technology);
+
+            var recordsAffected = await _context.SaveChangesAsync();
+            return recordsAffected > 0;
         }
 
-        public Task<BaseEntityResponse<Technology>> ReadTechnologies(BaseFiltersRequest filter)
+        public async Task<BaseEntityResponse<Technology>> ReadTechnologies(BaseFiltersRequest filters)
         {
-            throw new NotImplementedException();
+            var response = new BaseEntityResponse<Technology>();
+            var technologies = (from t
+                                in _context.Technologies
+                                select t)
+                                .AsNoTracking()
+                                .AsQueryable();
+            
+            // ==> Filtros
+            // Filtro por Nombre o Descripción
+            if(filters.NumFilter is not null && !string.IsNullOrEmpty(filters.TextFilter))
+            {
+                switch (filters.NumFilter)
+                {
+                    case 1: 
+                        technologies = technologies.Where(x => x.Name!.Contains(filters.TextFilter));
+                        break;
+                    case 2:
+                        technologies = technologies.Where(x => x.Description!.Contains(filters.TextFilter));
+                        break;
+                }
+            }
+            // Ordenamiento por default TechnologyID
+            if (filters.Sort is null) filters.Sort = "TechnologyId";
+
+            // ==> EndFiltros
+
+            response.TotalRecords = await technologies.CountAsync();
+            response.Items = await Ordering(filters, technologies, !(bool)filters.Download!).ToListAsync();
+
+            return response;
+           
+           
         }
 
-        public Task<bool> UpdateTechnology(Technology technology)
+        public async Task<bool> UpdateTechnology(Technology technology)
         {
-            throw new NotImplementedException();
+            _context.Update(technology);
+
+            var recordAffected = await _context.SaveChangesAsync();
+            return recordAffected > 0;
         }
 
-        public Task<bool> DeleteTechnology(int technologyId)
+        public async Task<bool> DeleteTechnology(int technologyId)
         {
-            throw new NotImplementedException();
+            var technology = await _context.Technologies
+                .AsNoTracking().
+                SingleOrDefaultAsync(x => x.TechnologyId.Equals(technologyId));
+
+            _context.Remove(technology!);
+
+            var recordAffected = await _context.SaveChangesAsync();
+            return recordAffected > 0;
         }
 
-        public Task<IEnumerable<Technology>> ListSelectTechnologies()
+        public async Task<IEnumerable<Technology>> ListSelectTechnologies()
         {
-            throw new NotImplementedException();
+            var technologies = await _context.Technologies
+                .AsNoTracking()
+                .ToListAsync();
+
+            return technologies;
         }
 
-        public Task<Technology> TechnologyById(int id)
+        public async Task<Technology> TechnologyById(int id)
         {
-            throw new NotImplementedException();
+            var technology = await _context.Technologies
+                .AsNoTracking()
+                .FirstOrDefaultAsync(x => x.TechnologyId == id);
+
+            return technology!;
         }
 
     }

@@ -7,7 +7,7 @@ namespace Infrastructure.Persistences.Interfaces
     public interface ITechnologyRepository
     {
         Task<bool> CreateTechnology(Technology technology);                                 // C
-        Task<BaseEntityResponse<Technology>> ReadTechnologies(BaseFiltersRequest filter);   // R
+        Task<BaseEntityResponse<Technology>> ReadTechnologies(BaseFiltersRequest filters);   // R
         Task<bool> UpdateTechnology(Technology technology);                                 // U
         Task<bool> DeleteTechnology(int technologyId);                                      // D
         Task<IEnumerable<Technology>> ListSelectTechnologies();
