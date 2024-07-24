@@ -1,10 +1,12 @@
+using Application.Extensions;
 using Infrastructure.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
-var Configuration = builder.Configuration;
+var configuration = builder.Configuration;
 
 // Add services to the container.
-builder.Services.AddInjectionInfrastructure(Configuration);
+builder.Services.AddInjectionInfrastructure(configuration);
+builder.Services.AddInjectionApplication(configuration);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
