@@ -1,4 +1,4 @@
-﻿using Infrastructure.Commons.Bases;
+﻿using Infrastructure.Commons.Bases.Request;
 using System.Linq.Dynamic.Core;
 
 namespace Infrastructure.Helpers

@@ -1,4 +1,4 @@
-﻿namespace Infrastructure.Commons.Bases
+﻿namespace Infrastructure.Commons.Bases.Request
 {
     public class BasePaginationRequest
     {
@@ -7,11 +7,12 @@
         public readonly int NumMaxRecordsPage = 50; // número máximo de registros por default
         public string Order { get; set; } = "asc"; // default ascendente
         public string? Sort { get; set; } = null;
-        public int Records { 
+        public int Records
+        {
             get => NumRecordsPage;
             set
             {
-                NumRecordsPage = (value > NumMaxRecordsPage) ? NumMaxRecordsPage : value;
+                NumRecordsPage = value > NumMaxRecordsPage ? NumMaxRecordsPage : value;
             }
         }
 
