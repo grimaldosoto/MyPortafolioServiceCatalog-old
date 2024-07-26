@@ -10,7 +10,8 @@ namespace Infrastructure.Persistences.Contexts.Configurations
         {
             builder.ToTable("Technology", "MyPortafolio");
 
-            builder.Property(e => e.TechnologyId).HasColumnName("TechnologyID");
+            builder.HasKey(e => e.Id);
+            builder.Property(e => e.Id).HasColumnName("TechnologyID");
 
             builder.Property(e => e.Description)
                 .HasMaxLength(255)

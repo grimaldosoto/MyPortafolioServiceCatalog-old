@@ -11,6 +11,7 @@ namespace Application.Mappers
         public TechnologyMappingProfile()
         {
             CreateMap<Technology, TechnologyResponseDto>()
+                .ForMember(x => x.TechnologyId, x => x.MapFrom(y => y.Id))
                 .ReverseMap(); 
 
             CreateMap<BaseEntityResponse<Technology>, BaseEntityResponse<TechnologyResponseDto>>()
@@ -19,6 +20,7 @@ namespace Application.Mappers
             CreateMap<TechnologyRequestDto, Technology>();
 
             CreateMap<Technology, TechnologySelectResponseDto>()
+                .ForMember(x => x.TechnologyId, x => x.MapFrom(y => y.Id))
                 .ReverseMap();
 
 

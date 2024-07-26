@@ -39,7 +39,7 @@ namespace Application.Services
             }
 
             var technology = _mapper.Map<Technology>(requestDto);
-            response.Data = await _unitOfWork.Technology.CreateTechnology(technology);
+            response.Data = await _unitOfWork.Technology.CreateAsync(technology);
 
             if (response.Data)
             {
@@ -84,8 +84,8 @@ namespace Application.Services
             }
 
             var technology = _mapper.Map<Technology>(requestDto);
-            technology.TechnologyId = technologyId;
-            response.Data = await _unitOfWork.Technology.UpdateTechnology(technology);
+            technology.Id = technologyId;
+            response.Data = await _unitOfWork.Technology.UpdateAsync(technology);
 
             if (response.Data)
             {
@@ -110,7 +110,7 @@ namespace Application.Services
                 response.Message = ReplyMessage.MESSAGE_QUERY_EMPTY;
             }
 
-            response.Data = await _unitOfWork.Technology.DeleteTechnology(technologyId);
+            response.Data = await _unitOfWork.Technology.DeleteAsync(technologyId);
 
             if (response.Data)
             {
@@ -129,7 +129,7 @@ namespace Application.Services
         public async Task<BaseResponse<IEnumerable<TechnologySelectResponseDto>>> ListSelectTechnologies()
         {
             var response = new BaseResponse<IEnumerable<TechnologySelectResponseDto>>();
-            var technologies = await _unitOfWork.Technology.ListSelectTechnologies();
+            var technologies = await _unitOfWork.Technology.GetAllAsync();
 
             if (technologies is null) {
                 response.IsSuccess = false;
@@ -145,7 +145,7 @@ namespace Application.Services
         public async Task<BaseResponse<TechnologyResponseDto>> TechnologyById(int technologyId)
         {
             var response = new BaseResponse<TechnologyResponseDto>();
-            var tecnology = await _unitOfWork.Technology.TechnologyById(technologyId);
+            var tecnology = await _unitOfWork.Technology.GetByIdAsync(technologyId);
 
             if (tecnology is null)
             {

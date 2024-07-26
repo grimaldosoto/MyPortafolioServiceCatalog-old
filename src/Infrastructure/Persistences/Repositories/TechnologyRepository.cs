@@ -9,29 +9,13 @@ namespace Infrastructure.Persistences.Repositories
 {
     public class TechnologyRepository : GenericRepository<Technology>, ITechnologyRepository
     {
-        private readonly MyPortaLiveContext _context;
-
-        public TechnologyRepository(MyPortaLiveContext context)
-        {
-            _context = context;
-        }
-
-        public async Task<bool> CreateTechnology(Technology technology)
-        {
-            await _context.AddAsync(technology);
-
-            var recordsAffected = await _context.SaveChangesAsync();
-            return recordsAffected > 0;
-        }
+        public TechnologyRepository(MyPortaLiveContext context) : base(context) { }
 
         public async Task<BaseEntityResponse<Technology>> ReadTechnologies(BaseFiltersRequest filters)
         {
             var response = new BaseEntityResponse<Technology>();
-            var technologies = (from t
-                                in _context.Technologies
-                                select t)
-                                .AsNoTracking()
-                                .AsQueryable();
+
+            var technologies = GetEntityQuery();
             
             // ==> Filtros
             // Filtro por Nombre o Descripción
@@ -48,7 +32,7 @@ namespace Infrastructure.Persistences.Repositories
                 }
             }
             // Ordenamiento por default TechnologyID
-            if (filters.Sort is null) filters.Sort = "TechnologyId";
+            if (filters.Sort is null) filters.Sort = "Id";
 
             // ==> EndFiltros
 
@@ -58,43 +42,7 @@ namespace Infrastructure.Persistences.Repositories
             return response;
         }
 
-        public async Task<bool> UpdateTechnology(Technology technology)
-        {
-            _context.Update(technology);
 
-            var recordAffected = await _context.SaveChangesAsync();
-            return recordAffected > 0;
-        }
-
-        public async Task<bool> DeleteTechnology(int technologyId)
-        {
-            var technology = await _context.Technologies
-                .AsNoTracking().
-                SingleOrDefaultAsync(x => x.TechnologyId.Equals(technologyId));
-
-            _context.Remove(technology!);
-
-            var recordAffected = await _context.SaveChangesAsync();
-            return recordAffected > 0;
-        }
-
-        public async Task<IEnumerable<Technology>> ListSelectTechnologies()
-        {
-            var technologies = await _context.Technologies
-                .AsNoTracking()
-                .ToListAsync();
-
-            return technologies;
-        }
-
-        public async Task<Technology> TechnologyById(int id)
-        {
-            var technology = await _context.Technologies
-                .AsNoTracking()
-                .FirstOrDefaultAsync(x => x.TechnologyId == id);
-
-            return technology!;
-        }
 
     }
 }
