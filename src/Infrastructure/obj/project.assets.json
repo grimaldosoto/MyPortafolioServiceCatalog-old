@@ -751,27 +751,27 @@
           }
         }
       },
-      "Domain/1.0.0": {
+      "MyPortafolioCatalog.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.32"
         },
         "compile": {
-          "bin/placeholder/Domain.dll": {}
+          "bin/placeholder/MyPortafolioCatalog.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Domain.dll": {}
+          "bin/placeholder/MyPortafolioCatalog.Domain.dll": {}
         }
       },
-      "Utilities/1.0.0": {
+      "MyPortafolioCatalog.Utilities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/Utilities.dll": {}
+          "bin/placeholder/MyPortafolioCatalog.Utilities.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Utilities.dll": {}
+          "bin/placeholder/MyPortafolioCatalog.Utilities.dll": {}
         }
       }
     }
@@ -1998,22 +1998,22 @@
         "version.txt"
       ]
     },
-    "Domain/1.0.0": {
+    "MyPortafolioCatalog.Domain/1.0.0": {
       "type": "project",
-      "path": "../Domain/Domain.csproj",
-      "msbuildProject": "../Domain/Domain.csproj"
+      "path": "../Domain/MyPortafolioCatalog.Domain.csproj",
+      "msbuildProject": "../Domain/MyPortafolioCatalog.Domain.csproj"
     },
-    "Utilities/1.0.0": {
+    "MyPortafolioCatalog.Utilities/1.0.0": {
       "type": "project",
-      "path": "../Utilities/Utilities.csproj",
-      "msbuildProject": "../Utilities/Utilities.csproj"
+      "path": "../Utilities/MyPortafolioCatalog.Utilities.csproj",
+      "msbuildProject": "../Utilities/MyPortafolioCatalog.Utilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Domain >= 1.0.0",
-      "System.Linq.Dynamic.Core >= 1.4.2",
-      "Utilities >= 1.0.0"
+      "MyPortafolioCatalog.Domain >= 1.0.0",
+      "MyPortafolioCatalog.Utilities >= 1.0.0",
+      "System.Linq.Dynamic.Core >= 1.4.2"
     ]
   },
   "packageFolders": {
@@ -2022,11 +2022,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\grima\\source\\repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Infrastructure\\Infrastructure.csproj",
-      "projectName": "Infrastructure",
-      "projectPath": "C:\\Users\\grima\\source\\repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\grima\\source\\repos\\grimaldosoto\\MyPortafolioService\\src\\Infrastructure\\MyPortafolioCatalog.Infrastructure.csproj",
+      "projectName": "MyPortafolioCatalog.Infrastructure",
+      "projectPath": "C:\\Users\\grima\\source\\repos\\grimaldosoto\\MyPortafolioService\\src\\Infrastructure\\MyPortafolioCatalog.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\grima\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\grima\\source\\repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\grima\\source\\repos\\grimaldosoto\\MyPortafolioService\\src\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\grima\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2044,11 +2044,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\grima\\source\\repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\grima\\source\\repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Domain\\Domain.csproj"
+            "C:\\Users\\grima\\source\\repos\\grimaldosoto\\MyPortafolioService\\src\\Domain\\MyPortafolioCatalog.Domain.csproj": {
+              "projectPath": "C:\\Users\\grima\\source\\repos\\grimaldosoto\\MyPortafolioService\\src\\Domain\\MyPortafolioCatalog.Domain.csproj"
             },
-            "C:\\Users\\grima\\source\\repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Utilities\\Utilities.csproj": {
-              "projectPath": "C:\\Users\\grima\\source\\repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Utilities\\Utilities.csproj"
+            "C:\\Users\\grima\\source\\repos\\grimaldosoto\\MyPortafolioService\\src\\Utilities\\MyPortafolioCatalog.Utilities.csproj": {
+              "projectPath": "C:\\Users\\grima\\source\\repos\\grimaldosoto\\MyPortafolioService\\src\\Utilities\\MyPortafolioCatalog.Utilities.csproj"
             }
           }
         }

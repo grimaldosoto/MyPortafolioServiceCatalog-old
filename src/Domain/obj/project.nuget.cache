@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/ENTl0UG+U8=",
+  "dgSpecHash": "iFkbUpIMCig=",
   "success": true,
-  "projectFilePath": "C:\\Users\\grima\\source\\repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\grima\\source\\repos\\grimaldosoto\\MyPortafolioService\\src\\Domain\\MyPortafolioCatalog.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\grima\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\grima\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

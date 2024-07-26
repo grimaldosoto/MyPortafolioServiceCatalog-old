@@ -15,9 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Application\Application.csproj" />
-    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
-    <ProjectReference Include="..\Utilities\Utilities.csproj" />
+    <ProjectReference Include="..\Application\MyPortafolioCatalog.Application.csproj" />
+    <ProjectReference Include="..\Infrastructure\MyPortafolioCatalog.Infrastructure.csproj" />
+    <ProjectReference Include="..\Utilities\MyPortafolioCatalog.Utilities.csproj" />
   </ItemGroup>
 
 </Project>

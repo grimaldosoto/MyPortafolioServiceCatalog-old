@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B/7Hh84IWaM=",
+  "dgSpecHash": "p0/AzMxzv2c=",
   "success": true,
-  "projectFilePath": "C:\\Users\\grima\\source\\repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\grima\\source\\repos\\grimaldosoto\\MyPortafolioService\\src\\Infrastructure\\MyPortafolioCatalog.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\grima\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\grima\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.7\\microsoft.data.sqlclient.2.1.7.nupkg.sha512",

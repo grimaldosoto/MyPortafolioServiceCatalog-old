@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\grima\\source\\repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Domain\\Domain.csproj": {}
+    "C:\\Users\\grima\\source\\repos\\grimaldosoto\\MyPortafolioService\\src\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\grima\\source\\repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Domain\\Domain.csproj": {
+    "C:\\Users\\grima\\source\\repos\\grimaldosoto\\MyPortafolioService\\src\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\grima\\source\\repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\grima\\source\\repos\\grimaldosoto\\MyPortafolioService\\src\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\grima\\source\\repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\grima\\source\\repos\\grimaldosoto\\MyPortafolioService\\src\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\grima\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\grima\\source\\repos\\grimaldosoto\\HomeApi-OnionArchitecture\\src\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\grima\\source\\repos\\grimaldosoto\\MyPortafolioService\\src\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\grima\\AppData\\Roaming\\NuGet\\NuGet.Config",

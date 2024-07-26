@@ -17,7 +17,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\Home.API\Home.API.csproj" />
+      <ProjectReference Include="..\..\src\Home.API\MyPortafolioCatalog.API.csproj" />
     </ItemGroup>
 
     <ItemGroup>
